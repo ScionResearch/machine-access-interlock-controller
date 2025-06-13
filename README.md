@@ -5,7 +5,7 @@
 
 ## Overview
 
-The Machine Access Interlock Controller is an industrial safety device that ensures a machine can only be enabled (powered) when all safety interlocks are engaged (“sealed”). It disables the machine if any interlock is broken or a fault is detected. Designed for reliability and configurability, it targets Arduino-compatible microcontrollers (e.g., RP2040, SAMD), with persistent configuration stored in flash memory, and provides a serial terminal menu for setup and diagnostics.
+The Machine Access Interlock Controller is an industrial safety device intended to be used in conjunction with the site access control system to ensure a machine can only be enabled (powered) when all safety interlocks are engaged (“sealed”), and the user is authorised. It disables the machine if any interlock is broken or a fault is detected. Upon enabling the machine, timers ensure the machine does not remain enabled once the user has finished. Machine run-time is detected via current transformer input, with configurable threshold, calibration, and amps-per-volt ratio. Designed for reliability and configurability, with persistent configuration stored in flash memory, and provides a serial terminal menu for setup and diagnostics.
 
 ---
 
@@ -30,8 +30,9 @@ The Machine Access Interlock Controller is an industrial safety device that ensu
   - 1× CT analog input (current transformer)
   - 1× PSU voltage feedback
 - **Outputs:**
-  - Contactor gate
-  - Output gate 1 & 2 (machine power control)
+  - Contactor 24VDC coil control
+  - Machine status (running/idle)
+  - Fault/alarm status
   - Status RGB LED
   - Enable and interlock LEDs
 - **Board:** Custom board definition (`scion_isc_m0.json`), with pin mappings in `src/sys_init.h`.
@@ -40,7 +41,7 @@ The Machine Access Interlock Controller is an industrial safety device that ensu
 
 ## Configuration & Operation
 
-- On power-up, the device loads configuration from flash. If not initialized, it writes defaults.
+- On power-up, the device loads configuration from flash. If not initialised, it writes defaults.
 - The main loop continuously checks interlock status, current draw, and handles timers.
 - If all interlocks are sealed and enable input is active, the machine can be enabled.
 - If any interlock opens or a fault occurs, the machine is immediately disabled.
@@ -65,7 +66,7 @@ The Machine Access Interlock Controller is an industrial safety device that ensu
 
 - Connect at **115200 baud**.
 - Menu allows:
-  - Toggling interlocks
+  - Enable/disable interlock inputs
   - Setting enable/pause timers
   - Adjusting current threshold
   - Setting CT ratio and calibration
@@ -78,7 +79,7 @@ The Machine Access Interlock Controller is an industrial safety device that ensu
 - Power supply undervoltage/overvoltage
 - CT disconnected
 - Overcurrent
-- Running while disabled
+- Running while disabled (tamper detection)
 
 ---
 
