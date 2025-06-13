@@ -101,7 +101,7 @@ void interlocksHandler(void) {
     if (interlock_state ^ interlock_sealed[i]) {
       interlocks_state_changed = true;
       interlock_sealed[i] = interlock_state;
-      if (debug) Serial.printf("Interlock %i changed state to %s\n", i + 1, interlock_state ? "Sealed" : "Unsealed");
+      if (debug) Serial.printf("Interlock %i changed state to %s\n\r", i + 1, interlock_state ? "Sealed" : "Unsealed");
     }
   }
   if ((interlocks_state_changed && interlocks_sealed) || !interlocks_enabled) setLED(interlock_led_pin, RG_GREEN);
@@ -110,10 +110,10 @@ void interlocksHandler(void) {
 void enabledHandler(void) {
   if (!running && !paused && (millis() - enable_timeout_TS_ms >= enable_timeout_time_ms)) {  // Pre-run timer timeout
     disable();
-    if (debug) Serial.printf("Disabled due to pre-run %is timer timeout\n", enable_timeout_time_ms / 1000);
+    if (debug) Serial.printf("Disabled due to pre-run %is timer timeout\n\r", enable_timeout_time_ms / 1000);
   } else if (paused && (millis() - pause_timeout_TS_ms >= pause_timeout_time_ms)) {  // Post-run timer timeout
     disable();
-    if (debug) Serial.printf("Disabled due to post-run %is timer timeout\n", pause_timeout_time_ms / 1000);
+    if (debug) Serial.printf("Disabled due to post-run %is timer timeout\n\r", pause_timeout_time_ms / 1000);
   } else if (enabled_state_changed) {  // Enable only just triggered
     if (fault) {
       faultHandler(FAULT_SYS_OK);  // clear fault status on valid enable signal
@@ -124,7 +124,7 @@ void enabledHandler(void) {
     }
     if (interlocks_sealed) {
       enable();
-      if (debug) Serial.printf("Enabled with %is timer\n", enable_timeout_time_ms / 1000);
+      if (debug) Serial.printf("Enabled with %is timer\n\r", enable_timeout_time_ms / 1000);
     }
     enabled_state_changed = false;
   }
@@ -238,7 +238,7 @@ void checkSerial(void) {
         String buf = String(term_buffer);
         buf.remove(term_buffer_ptr);
         uint32_t new_timer_value = buf.toInt();
-        if (debug) Serial.println(String("\nGot integer value ") + String(new_timer_value));
+        if (debug) Serial.println(String("\n\rGot integer value ") + String(new_timer_value));
         // Apply new enable timer value
         if (menu_page == MENU_ENABLE_TIME && new_timer_value <= LIMIT_MAX_ENABLE_TIME_S && new_timer_value >= LIMIT_MIN_ENABLE_TIME_S) enable_timeout_time_ms = new_timer_value * 1000;
         // Apply new pause timer value
@@ -247,7 +247,7 @@ void checkSerial(void) {
         String buf = String(term_buffer);
         buf.remove(term_buffer_ptr);
         float new_float_value = String(buf).toFloat();
-        if (debug) Serial.println(String("\nGot float value ") + String(new_float_value));
+        if (debug) Serial.println(String("\n\rGot float value ") + String(new_float_value));
         // Apply new run current threshold
         if (menu_page == MENU_CURRENT_THRESH && new_float_value <= LIMIT_MAX_CURRENT_THRESH_A && new_float_value >= LIMIT_MIN_CURRENT_THRESH_A) current_threshold = new_float_value;
         // Apply new run CT ratio
@@ -397,7 +397,7 @@ void setupFlash(void) {
     else if (data.pause_timeout_time_ms > 3600000) flash_initialised = false;
     else if (data.current_threshold < 0.1 || data.current_threshold > 1000) flash_initialised = false;
     if (debug) {
-      Serial.printf("Got data:\nInitialised: %s\nAmps per Volt: %i\nEnable timeout: %i\nPause timeout: %i\nCurrent threshold: ", data.initialised ? "true" : "false", data.amps_per_volt, data.enable_timeout_time_ms, data.pause_timeout_time_ms);
+      Serial.printf("Got data:\n\rInitialised: %s\n\rAmps per Volt: %i\n\rEnable timeout: %i\n\rPause timeout: %i\n\rCurrent threshold: ", data.initialised ? "true" : "false", data.amps_per_volt, data.enable_timeout_time_ms, data.pause_timeout_time_ms);
       Serial.println(data.current_threshold);
     }
   } else flash_initialised = false;
@@ -446,11 +446,11 @@ void termWriteMain(void) {
   char col_37[10];
   term_col(37).toCharArray(col_37, 10);
   term_buffer_ptr = 0;
-  Serial.printf("\fInterlock safety controller v%s\n\n", VERSION_FW);
-  Serial.printf("Enter item number to edit\n\n");
-  Serial.printf("1 - Configure interlocks\n");
-  Serial.printf("2 - Enable/Pre-start timeout%s%is\n", col_37, enable_timeout_time_ms / 1000);
-  Serial.printf("3 - Pause/Post-stop timeout%s%is\n", col_37, pause_timeout_time_ms / 1000);
+  Serial.printf("\fInterlock safety controller v%s\n\r\n\r", VERSION_FW);
+  Serial.printf("Enter item number to edit\n\r\n\r");
+  Serial.printf("1 - Configure interlocks\n\r");
+  Serial.printf("2 - Enable/Pre-start timeout%s%is\n\r", col_37, enable_timeout_time_ms / 1000);
+  Serial.printf("3 - Pause/Post-stop timeout%s%is\n\r", col_37, pause_timeout_time_ms / 1000);
   Serial.printf("4 - Run current threshold%s", col_37);
   Serial.print(current_threshold);
   Serial.println("A");
@@ -459,7 +459,7 @@ void termWriteMain(void) {
   Serial.println("A/1V");
   Serial.printf("6 - Current calibration multiplier%s", col_37);
   Serial.println(current_multiplier);
-  Serial.printf("\nCurrent meausurement now:%s", col_37);
+  Serial.printf("\n\rCurrent meausurement now:%s", col_37);
   Serial.print(ct_amps);
   Serial.println("A");
   Serial.print(term_cond_colour_str(fault_msg[fault_ptr], fault_ptr, ANSI_GREEN, ANSI_RED));
@@ -470,13 +470,13 @@ void termWriteMain(void) {
 // Write the interlock config page to terminal
 void termWrite1(void) {
   char term_str[300];
-  snprintf(term_str, 300, "\f1 - Configure interlocks\n\n"
-                          "Enter interlock number to toggle enable/disable\n\n"
-                          "Interlock 1: %s\n"
-                          "Interlock 2: %s\n"
-                          "Interlock 3: %s\n"
-                          "Interlock 4: %s\n\n"
-                          "Type 's' to save to flash, 'b' to go back\n",
+  snprintf(term_str, 300, "\f1 - Configure interlocks\n\r\n\r"
+                          "Enter interlock number to toggle enable/disable\n\r\n\r"
+                          "Interlock 1: %s\n\r"
+                          "Interlock 2: %s\n\r"
+                          "Interlock 3: %s\n\r"
+                          "Interlock 4: %s\n\r\n\r"
+                          "Type 's' to save to flash, 'b' to go back\n\r",
            interlock_enabled[0] ? "Enabled" : "Disabled", interlock_enabled[1] ? "Enabled" : "Disabled", interlock_enabled[2] ? "Enabled" : "Disabled", interlock_enabled[3] ? "Enabled" : "Disabled");
   Serial.print(term_str);
   menu_page = MENU_INTERLOCKS;
@@ -485,10 +485,10 @@ void termWrite1(void) {
 
 // Write the enable timer config page to terminal
 void termWrite2(void) {
-  String term_str = term_cls() + "2 - Enable/Pre-start timeout\n\n"
+  String term_str = term_cls() + "2 - Enable/Pre-start timeout\n\r\n\r"
                                  "Current value configured:"
-                    + term_col(37) + (String)(enable_timeout_time_ms / 1000) + "s\n\n"
-                                                                               "Enter new value in seconds:\n\n"
+                    + term_col(37) + (String)(enable_timeout_time_ms / 1000) + "s\n\r\n\r"
+                                                                               "Enter new value in seconds:\n\r\n\r"
                                                                                "Type 's' to save to flash, 'b' to go back";
   Serial.print(term_str);
   Serial.print(term_cursor(5, 37));
@@ -497,10 +497,10 @@ void termWrite2(void) {
 
 // Write the pause timer config page to terminal
 void termWrite3(void) {
-  String term_str = term_cls() + "3 - Pause/Post-stop timeout\n\n"
+  String term_str = term_cls() + "3 - Pause/Post-stop timeout\n\r\n\r"
                                  "Current value configured:"
-                    + term_col(37) + (String)(pause_timeout_time_ms / 1000) + "s\n\n"
-                                                                              "Enter new value in seconds:\n\n"
+                    + term_col(37) + (String)(pause_timeout_time_ms / 1000) + "s\n\r\n\r"
+                                                                              "Enter new value in seconds:\n\r\n\r"
                                                                               "Type 's' to save to flash, 'b' to go back";
   Serial.print(term_str);
   Serial.print(term_cursor(5, 37));
@@ -509,10 +509,10 @@ void termWrite3(void) {
 
 // Write the run current threshold config page to terminal
 void termWrite4(void) {
-  String term_str = term_cls() + "4 - Run current threshold\n\n"
+  String term_str = term_cls() + "4 - Run current threshold\n\r\n\r"
                                  "Current value configured:"
-                    + term_col(37) + (String)current_threshold + "A\n\n"
-                                                                 "Enter new value in Amps:\n\n"
+                    + term_col(37) + (String)current_threshold + "A\n\r\n\r"
+                                                                 "Enter new value in Amps:\n\r\n\r"
                                                                  "Type 's' to save to flash, 'b' to go back";
   Serial.print(term_str);
   Serial.print(term_cursor(5, 37));
@@ -521,10 +521,10 @@ void termWrite4(void) {
 
 // Write the CT ratio config page to terminal
 void termWrite5(void) {
-  String term_str = term_cls() + "5 - CT Amps per Volt\n\n"
+  String term_str = term_cls() + "5 - CT Amps per Volt\n\r\n\r"
                                  "Current value configured:"
-                    + term_col(37) + (String)amps_per_volt + "A/1V\n\n"
-                                                             "Enter new value in Amps:\n\n"
+                    + term_col(37) + (String)amps_per_volt + "A/1V\n\r\n\r"
+                                                             "Enter new value in Amps:\n\r\n\r"
                                                              "Type 's' to save to flash, 'b' to go back";
   Serial.print(term_str);
   Serial.print(term_cursor(5, 37));
@@ -533,10 +533,10 @@ void termWrite5(void) {
 
 // Write the current calibration config page to terminal
 void termWrite6(void) {
-  String term_str = term_cls() + "6 - Current calibration	multiplier\n\n"
+  String term_str = term_cls() + "6 - Current calibration	multiplier\n\r\n\r"
                                  "Current measurement now:"
-                    + term_col(37) + (String)ct_amps + "A\n\n"
-                                                       "Enter actual value in Amps:\n\n"
+                    + term_col(37) + (String)ct_amps + "A\n\r\n\r"
+                                                       "Enter actual value in Amps:\n\r\n\r"
                                                        "Type 's' to save to flash, 'b' to go back";
   Serial.print(term_str);
   Serial.print(term_cursor(5, 37));
