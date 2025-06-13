@@ -1,0 +1,93 @@
+//
+// !!! WARNING !!! AUTO-GENERATED FILE!
+// PLEASE DO NOT MODIFY IT AND USE "platformio.ini":
+// https://docs.platformio.org/page/projectconf/section_env_build.html#build-flags
+//
+{
+    "configurations": [
+        {
+            "name": "PlatformIO",
+            "includePath": [
+                "D:/Documents/Documents/Platformio/Projects/machine-access-interlock-controller/include",
+                "D:/Documents/Documents/Platformio/Projects/machine-access-interlock-controller/src",
+                "D:/Documents/Documents/Platformio/Projects/machine-access-interlock-controller/.pio/libdeps/scion_isc_m0/FlashStorage_SAMD/src",
+                "C:/Users/PeakeJe/.platformio/packages/framework-cmsis/CMSIS/Core/Include",
+                "C:/Users/PeakeJe/.platformio/packages/framework-cmsis-atmel/CMSIS/Device/ATMEL",
+                "C:/Users/PeakeJe/.platformio/packages/framework-arduino-samd-adafruit/cores/arduino",
+                "C:/Users/PeakeJe/.platformio/packages/framework-arduino-samd-adafruit/libraries/Adafruit_TinyUSB_Arduino/src/arduino",
+                "C:/Users/PeakeJe/.platformio/packages/framework-cmsis/CMSIS/DSP/Include",
+                "C:/Users/PeakeJe/.platformio/packages/framework-arduino-samd-adafruit/variants/isc_m0",
+                "D:/Documents/Documents/Platformio/Projects/machine-access-interlock-controller/lib/FlashStorage/src",
+                "C:/Users/PeakeJe/.platformio/packages/framework-arduino-samd-adafruit/libraries/Adafruit_TinyUSB_Arduino/src",
+                "C:/Users/PeakeJe/.platformio/packages/framework-arduino-samd-adafruit/libraries/Adafruit_ZeroDMA",
+                "C:/Users/PeakeJe/.platformio/packages/framework-arduino-samd-adafruit/libraries/CI_Tests",
+                "C:/Users/PeakeJe/.platformio/packages/framework-arduino-samd-adafruit/libraries/HID",
+                "C:/Users/PeakeJe/.platformio/packages/framework-arduino-samd-adafruit/libraries/I2S/src",
+                "C:/Users/PeakeJe/.platformio/packages/framework-arduino-samd-adafruit/libraries/SAMD_AnalogCorrection/src",
+                "C:/Users/PeakeJe/.platformio/packages/framework-arduino-samd-adafruit/libraries/SDU/src",
+                "C:/Users/PeakeJe/.platformio/packages/framework-arduino-samd-adafruit/libraries/SPI",
+                "C:/Users/PeakeJe/.platformio/packages/framework-arduino-samd-adafruit/libraries/Servo/src",
+                "C:/Users/PeakeJe/.platformio/packages/framework-arduino-samd-adafruit/libraries/USBHost/src",
+                "C:/Users/PeakeJe/.platformio/packages/framework-arduino-samd-adafruit/libraries/Wire",
+                ""
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "path": [
+                    "D:/Documents/Documents/Platformio/Projects/machine-access-interlock-controller/include",
+                    "D:/Documents/Documents/Platformio/Projects/machine-access-interlock-controller/src",
+                    "D:/Documents/Documents/Platformio/Projects/machine-access-interlock-controller/.pio/libdeps/scion_isc_m0/FlashStorage_SAMD/src",
+                    "C:/Users/PeakeJe/.platformio/packages/framework-cmsis/CMSIS/Core/Include",
+                    "C:/Users/PeakeJe/.platformio/packages/framework-cmsis-atmel/CMSIS/Device/ATMEL",
+                    "C:/Users/PeakeJe/.platformio/packages/framework-arduino-samd-adafruit/cores/arduino",
+                    "C:/Users/PeakeJe/.platformio/packages/framework-arduino-samd-adafruit/libraries/Adafruit_TinyUSB_Arduino/src/arduino",
+                    "C:/Users/PeakeJe/.platformio/packages/framework-cmsis/CMSIS/DSP/Include",
+                    "C:/Users/PeakeJe/.platformio/packages/framework-arduino-samd-adafruit/variants/isc_m0",
+                    "D:/Documents/Documents/Platformio/Projects/machine-access-interlock-controller/lib/FlashStorage/src",
+                    "C:/Users/PeakeJe/.platformio/packages/framework-arduino-samd-adafruit/libraries/Adafruit_TinyUSB_Arduino/src",
+                    "C:/Users/PeakeJe/.platformio/packages/framework-arduino-samd-adafruit/libraries/Adafruit_ZeroDMA",
+                    "C:/Users/PeakeJe/.platformio/packages/framework-arduino-samd-adafruit/libraries/CI_Tests",
+                    "C:/Users/PeakeJe/.platformio/packages/framework-arduino-samd-adafruit/libraries/HID",
+                    "C:/Users/PeakeJe/.platformio/packages/framework-arduino-samd-adafruit/libraries/I2S/src",
+                    "C:/Users/PeakeJe/.platformio/packages/framework-arduino-samd-adafruit/libraries/SAMD_AnalogCorrection/src",
+                    "C:/Users/PeakeJe/.platformio/packages/framework-arduino-samd-adafruit/libraries/SDU/src",
+                    "C:/Users/PeakeJe/.platformio/packages/framework-arduino-samd-adafruit/libraries/SPI",
+                    "C:/Users/PeakeJe/.platformio/packages/framework-arduino-samd-adafruit/libraries/Servo/src",
+                    "C:/Users/PeakeJe/.platformio/packages/framework-arduino-samd-adafruit/libraries/USBHost/src",
+                    "C:/Users/PeakeJe/.platformio/packages/framework-arduino-samd-adafruit/libraries/Wire",
+                    ""
+                ]
+            },
+            "defines": [
+                "PLATFORMIO=60118",
+                "ARDUINO_ISC_M0",
+                "SCION_ISC_M0",
+                "__SAMD21E18A__",
+                "__SAMD21__",
+                "__FPU_PRESENT",
+                "ARM_MATH_CM0",
+                "ENABLE_CACHE",
+                "ARDUINO=10805",
+                "F_CPU=48000000L",
+                "USBCON",
+                "USB_VID=0x04D8",
+                "USB_PID=0xEB5E",
+                "USB_PRODUCT=\"Scion Interlock Safety Controller M0\"",
+                "USB_MANUFACTURER=\"Scion\"",
+                "ARDUINO_ARCH_SAMD",
+                "USB_CONFIG_POWER=100",
+                "ARDUINO_SAMD_ADAFRUIT",
+                ""
+            ],
+            "cStandard": "gnu11",
+            "cppStandard": "gnu++11",
+            "compilerPath": "C:/Users/PeakeJe/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi-gcc.exe",
+            "compilerArgs": [
+                "-mcpu=cortex-m0",
+                "-mthumb",
+                ""
+            ]
+        }
+    ],
+    "version": 4
+}

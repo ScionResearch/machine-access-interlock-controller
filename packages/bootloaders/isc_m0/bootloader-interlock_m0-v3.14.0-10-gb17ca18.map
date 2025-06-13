@@ -1,0 +1,1058 @@
+Archive member included to satisfy reference by file (symbol)
+
+/usr/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(_thumb1_case_uqi.o)
+                              build/interlock_m0/hid.o (__gnu_thumb1_case_uqi)
+/usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libg_nano.a(lib_a-memcpy-stub.o)
+                              build/interlock_m0/cdc_enumerate.o (memcpy)
+/usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libg_nano.a(lib_a-memset.o)
+                              build/interlock_m0/cdc_enumerate.o (memset)
+/usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libg_nano.a(lib_a-strlen.o)
+                              build/interlock_m0/cdc_enumerate.o (strlen)
+
+Allocating common symbols
+Common symbol       size              file
+
+b_sharp_received    0x1               build/interlock_m0/usart_sam_ba.o
+timerHigh           0x4               build/interlock_m0/utils.o
+j                   0x1               build/interlock_m0/sam_ba_monitor.o
+idx_rx_write        0x1               build/interlock_m0/usart_sam_ba.o
+size_of_data        0x2               build/interlock_m0/usart_sam_ba.o
+ctrlOutCache        0x44              build/interlock_m0/cdc_enumerate.o
+length              0x4               build/interlock_m0/sam_ba_monitor.o
+ptr                 0x4               build/interlock_m0/sam_ba_monitor.o
+command             0x1               build/interlock_m0/sam_ba_monitor.o
+resetHorizon        0x4               build/interlock_m0/utils.o
+idx_tx_read         0x1               build/interlock_m0/usart_sam_ba.o
+i                   0x4               build/interlock_m0/sam_ba_monitor.o
+buffer_tx_usart     0x80              build/interlock_m0/usart_sam_ba.o
+error_timeout       0x1               build/interlock_m0/usart_sam_ba.o
+usb_endpoint_table  0x100             build/interlock_m0/cdc_enumerate.o
+data                0x41              build/interlock_m0/sam_ba_monitor.o
+mode_of_transfer    0x1               build/interlock_m0/usart_sam_ba.o
+ptr_data            0x4               build/interlock_m0/sam_ba_monitor.o
+idx_rx_read         0x1               build/interlock_m0/usart_sam_ba.o
+sp                  0x4               build/interlock_m0/sam_ba_monitor.o
+current_number      0x4               build/interlock_m0/sam_ba_monitor.o
+idx_tx_write        0x1               build/interlock_m0/usart_sam_ba.o
+endpointCache       0x220             build/interlock_m0/cdc_enumerate.o
+u32tmp              0x4               build/interlock_m0/sam_ba_monitor.o
+buffer_rx_usart     0x80              build/interlock_m0/usart_sam_ba.o
+
+Discarded input sections
+
+ .text          0x0000000000000000        0x0 build/interlock_m0/flash_samd21.o
+ .data          0x0000000000000000        0x0 build/interlock_m0/flash_samd21.o
+ .bss           0x0000000000000000        0x0 build/interlock_m0/flash_samd21.o
+ .text.flash_write
+                0x0000000000000000       0x9c build/interlock_m0/flash_samd21.o
+ .text          0x0000000000000000        0x0 build/interlock_m0/init_samd21.o
+ .data          0x0000000000000000        0x0 build/interlock_m0/init_samd21.o
+ .bss           0x0000000000000000        0x0 build/interlock_m0/init_samd21.o
+ .data.g_interrupt_enabled
+                0x0000000000000000        0x1 build/interlock_m0/init_samd21.o
+ .text          0x0000000000000000        0x0 build/interlock_m0/startup_samd21.o
+ .data          0x0000000000000000        0x0 build/interlock_m0/startup_samd21.o
+ .bss           0x0000000000000000        0x0 build/interlock_m0/startup_samd21.o
+ .text          0x0000000000000000        0x0 build/interlock_m0/usart_sam_ba.o
+ .data          0x0000000000000000        0x0 build/interlock_m0/usart_sam_ba.o
+ .bss           0x0000000000000000        0x0 build/interlock_m0/usart_sam_ba.o
+ .text.usart_open
+                0x0000000000000000       0xbc build/interlock_m0/usart_sam_ba.o
+ .text.usart_close
+                0x0000000000000000       0x10 build/interlock_m0/usart_sam_ba.o
+ .text.usart_putc
+                0x0000000000000000       0x14 build/interlock_m0/usart_sam_ba.o
+ .text.usart_getc
+                0x0000000000000000       0x10 build/interlock_m0/usart_sam_ba.o
+ .text.usart_is_rx_ready
+                0x0000000000000000       0x10 build/interlock_m0/usart_sam_ba.o
+ .text.usart_sharp_received
+                0x0000000000000000       0x1a build/interlock_m0/usart_sam_ba.o
+ .text.usart_readc
+                0x0000000000000000       0x20 build/interlock_m0/usart_sam_ba.o
+ .text.usart_putdata
+                0x0000000000000000       0x1a build/interlock_m0/usart_sam_ba.o
+ .text.usart_getdata
+                0x0000000000000000        0xe build/interlock_m0/usart_sam_ba.o
+ .text.getbytes
+                0x0000000000000000       0x60 build/interlock_m0/usart_sam_ba.o
+ .text.getPacket
+                0x0000000000000000       0x70 build/interlock_m0/usart_sam_ba.o
+ .text.usart_putdata_xmd
+                0x0000000000000000      0x10c build/interlock_m0/usart_sam_ba.o
+ .text.usart_getdata_xmd
+                0x0000000000000000       0xb8 build/interlock_m0/usart_sam_ba.o
+ COMMON         0x0000000000000000      0x109 build/interlock_m0/usart_sam_ba.o
+ .text          0x0000000000000000        0x0 build/interlock_m0/screen.o
+ .data          0x0000000000000000        0x0 build/interlock_m0/screen.o
+ .bss           0x0000000000000000        0x0 build/interlock_m0/screen.o
+ .debug_info    0x0000000000000000      0x90a build/interlock_m0/screen.o
+ .debug_abbrev  0x0000000000000000      0x197 build/interlock_m0/screen.o
+ .debug_aranges
+                0x0000000000000000       0x18 build/interlock_m0/screen.o
+ .debug_line    0x0000000000000000      0x113 build/interlock_m0/screen.o
+ .debug_str     0x0000000000000000      0x5e9 build/interlock_m0/screen.o
+ .comment       0x0000000000000000       0x80 build/interlock_m0/screen.o
+ .ARM.attributes
+                0x0000000000000000       0x32 build/interlock_m0/screen.o
+ .text          0x0000000000000000        0x0 build/interlock_m0/images.o
+ .data          0x0000000000000000        0x0 build/interlock_m0/images.o
+ .bss           0x0000000000000000        0x0 build/interlock_m0/images.o
+ .rodata.arrowLogo
+                0x0000000000000000       0x39 build/interlock_m0/images.o
+ .rodata.fileLogo
+                0x0000000000000000       0x4a build/interlock_m0/images.o
+ .rodata.font8  0x0000000000000000      0x240 build/interlock_m0/images.o
+ .rodata.pendriveLogo
+                0x0000000000000000       0x3e build/interlock_m0/images.o
+ .debug_info    0x0000000000000000      0x118 build/interlock_m0/images.o
+ .debug_abbrev  0x0000000000000000       0x66 build/interlock_m0/images.o
+ .debug_aranges
+                0x0000000000000000       0x18 build/interlock_m0/images.o
+ .debug_line    0x0000000000000000       0x90 build/interlock_m0/images.o
+ .debug_str     0x0000000000000000      0x1b4 build/interlock_m0/images.o
+ .comment       0x0000000000000000       0x80 build/interlock_m0/images.o
+ .ARM.attributes
+                0x0000000000000000       0x32 build/interlock_m0/images.o
+ .text          0x0000000000000000        0x0 build/interlock_m0/utils.o
+ .data          0x0000000000000000        0x0 build/interlock_m0/utils.o
+ .bss           0x0000000000000000        0x0 build/interlock_m0/utils.o
+ .text.panic    0x0000000000000000        0x2 build/interlock_m0/utils.o
+ .text          0x0000000000000000        0x0 build/interlock_m0/cdc_enumerate.o
+ .data          0x0000000000000000        0x0 build/interlock_m0/cdc_enumerate.o
+ .bss           0x0000000000000000        0x0 build/interlock_m0/cdc_enumerate.o
+ .text.reset_ep
+                0x0000000000000000       0x24 build/interlock_m0/cdc_enumerate.o
+ .text.stall_ep
+                0x0000000000000000       0x20 build/interlock_m0/cdc_enumerate.o
+ .text.cdc_is_rx_ready
+                0x0000000000000000       0x20 build/interlock_m0/cdc_enumerate.o
+ .text          0x0000000000000000        0x0 build/interlock_m0/fat.o
+ .data          0x0000000000000000        0x0 build/interlock_m0/fat.o
+ .bss           0x0000000000000000        0x0 build/interlock_m0/fat.o
+ .text          0x0000000000000000        0x0 build/interlock_m0/main.o
+ .data          0x0000000000000000        0x0 build/interlock_m0/main.o
+ .bss           0x0000000000000000        0x0 build/interlock_m0/main.o
+ .text          0x0000000000000000        0x0 build/interlock_m0/msc.o
+ .data          0x0000000000000000        0x0 build/interlock_m0/msc.o
+ .bss           0x0000000000000000        0x0 build/interlock_m0/msc.o
+ .text.msc_reset
+                0x0000000000000000       0x1c build/interlock_m0/msc.o
+ .text.udd_ep_set_halt
+                0x0000000000000000       0x10 build/interlock_m0/msc.o
+ .bss.mscReset  0x0000000000000000        0x1 build/interlock_m0/msc.o
+ .text          0x0000000000000000        0x0 build/interlock_m0/sam_ba_monitor.o
+ .data          0x0000000000000000        0x0 build/interlock_m0/sam_ba_monitor.o
+ .bss           0x0000000000000000        0x0 build/interlock_m0/sam_ba_monitor.o
+ .text.sam_ba_monitor_init
+                0x0000000000000000        0x2 build/interlock_m0/sam_ba_monitor.o
+ .text.sam_ba_putdata_term
+                0x0000000000000000        0x8 build/interlock_m0/sam_ba_monitor.o
+ .text          0x0000000000000000        0x0 build/interlock_m0/uart_driver.o
+ .data          0x0000000000000000        0x0 build/interlock_m0/uart_driver.o
+ .bss           0x0000000000000000        0x0 build/interlock_m0/uart_driver.o
+ .text.uart_get_sercom_index
+                0x0000000000000000       0x2c build/interlock_m0/uart_driver.o
+ .text.uart_basic_init
+                0x0000000000000000       0x58 build/interlock_m0/uart_driver.o
+ .text.uart_disable
+                0x0000000000000000       0x10 build/interlock_m0/uart_driver.o
+ .text.uart_write_byte
+                0x0000000000000000        0xc build/interlock_m0/uart_driver.o
+ .text.uart_read_byte
+                0x0000000000000000       0x28 build/interlock_m0/uart_driver.o
+ .text.uart_write_buffer_polled
+                0x0000000000000000       0x20 build/interlock_m0/uart_driver.o
+ .text.uart_read_buffer_polled
+                0x0000000000000000       0x3c build/interlock_m0/uart_driver.o
+ .rodata        0x0000000000000000       0x10 build/interlock_m0/uart_driver.o
+ .bss.uart_drv_error_flag
+                0x0000000000000000        0x1 build/interlock_m0/uart_driver.o
+ .debug_info    0x0000000000000000     0x2658 build/interlock_m0/uart_driver.o
+ .debug_abbrev  0x0000000000000000      0x2ad build/interlock_m0/uart_driver.o
+ .debug_loc     0x0000000000000000      0x135 build/interlock_m0/uart_driver.o
+ .debug_aranges
+                0x0000000000000000       0x50 build/interlock_m0/uart_driver.o
+ .debug_ranges  0x0000000000000000       0x40 build/interlock_m0/uart_driver.o
+ .debug_line    0x0000000000000000      0x271 build/interlock_m0/uart_driver.o
+ .debug_str     0x0000000000000000      0xddd build/interlock_m0/uart_driver.o
+ .comment       0x0000000000000000       0x80 build/interlock_m0/uart_driver.o
+ .debug_frame   0x0000000000000000       0xb0 build/interlock_m0/uart_driver.o
+ .ARM.attributes
+                0x0000000000000000       0x32 build/interlock_m0/uart_driver.o
+ .text          0x0000000000000000        0x0 build/interlock_m0/hid.o
+ .data          0x0000000000000000        0x0 build/interlock_m0/hid.o
+ .bss           0x0000000000000000        0x0 build/interlock_m0/hid.o
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(_thumb1_case_uqi.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(_thumb1_case_uqi.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libg_nano.a(lib_a-memcpy-stub.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libg_nano.a(lib_a-memcpy-stub.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libg_nano.a(lib_a-memcpy-stub.o)
+ .text          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libg_nano.a(lib_a-memset.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libg_nano.a(lib_a-memset.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libg_nano.a(lib_a-memset.o)
+ .data          0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libg_nano.a(lib_a-strlen.o)
+ .bss           0x0000000000000000        0x0 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libg_nano.a(lib_a-strlen.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+rom              0x0000000000000000 0x0000000000002000 xr
+ram              0x0000000020000000 0x0000000000008000 xrw
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD build/interlock_m0/flash_samd21.o
+LOAD build/interlock_m0/init_samd21.o
+LOAD build/interlock_m0/startup_samd21.o
+LOAD build/interlock_m0/usart_sam_ba.o
+LOAD build/interlock_m0/screen.o
+LOAD build/interlock_m0/images.o
+LOAD build/interlock_m0/utils.o
+LOAD build/interlock_m0/cdc_enumerate.o
+LOAD build/interlock_m0/fat.o
+LOAD build/interlock_m0/main.o
+LOAD build/interlock_m0/msc.o
+LOAD build/interlock_m0/sam_ba_monitor.o
+LOAD build/interlock_m0/uart_driver.o
+LOAD build/interlock_m0/hid.o
+START GROUP
+LOAD /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a
+LOAD /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libg_nano.a
+LOAD /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a
+END GROUP
+START GROUP
+LOAD /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a
+LOAD /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a
+LOAD /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libnosys.a
+END GROUP
+START GROUP
+LOAD /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a
+LOAD /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libc_nano.a
+LOAD /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libnosys.a
+END GROUP
+                0x0000000000002000                STACK_SIZE = DEFINED (STACK_SIZE)?STACK_SIZE:DEFINED (__stack_size__)?__stack_size__:0x2000
+
+.text           0x0000000000000000     0x1d50
+                0x0000000000000000                . = ALIGN (0x4)
+                0x0000000000000000                _sfixed = .
+ *(.vectors .vectors.*)
+ .vectors       0x0000000000000000       0xb4 build/interlock_m0/startup_samd21.o
+                0x0000000000000000                exception_table
+ *(.text .text.* .gnu.linkonce.t.*)
+ .text.flash_erase_row
+                0x00000000000000b4       0x28 build/interlock_m0/flash_samd21.o
+                0x00000000000000b4                flash_erase_row
+ .text.flash_erase_to_end
+                0x00000000000000dc       0x1c build/interlock_m0/flash_samd21.o
+                0x00000000000000dc                flash_erase_to_end
+ .text.copy_words
+                0x00000000000000f8       0x14 build/interlock_m0/flash_samd21.o
+                0x00000000000000f8                copy_words
+ .text.flash_write_words
+                0x000000000000010c       0x54 build/interlock_m0/flash_samd21.o
+                0x000000000000010c                flash_write_words
+ .text.flash_write_row
+                0x0000000000000160       0x2e build/interlock_m0/flash_samd21.o
+                0x0000000000000160                flash_write_row
+ *fill*         0x000000000000018e        0x2 
+ .text.dfll_sync
+                0x0000000000000190       0x10 build/interlock_m0/init_samd21.o
+ .text.system_init
+                0x00000000000001a0       0xbc build/interlock_m0/init_samd21.o
+                0x00000000000001a0                system_init
+ .text.SysTick_Handler
+                0x000000000000025c        0x8 build/interlock_m0/init_samd21.o
+                0x000000000000025c                SysTick_Handler
+ .text.Dummy_Handler
+                0x0000000000000264        0x2 build/interlock_m0/startup_samd21.o
+                0x0000000000000264                DMAC_Handler
+                0x0000000000000264                AC_Handler
+                0x0000000000000264                PendSV_Handler
+                0x0000000000000264                NMI_Handler
+                0x0000000000000264                SERCOM1_Handler
+                0x0000000000000264                ADC_Handler
+                0x0000000000000264                TCC1_Handler
+                0x0000000000000264                SERCOM2_Handler
+                0x0000000000000264                TCC0_Handler
+                0x0000000000000264                RTC_Handler
+                0x0000000000000264                EIC_Handler
+                0x0000000000000264                WDT_Handler
+                0x0000000000000264                TC4_Handler
+                0x0000000000000264                USB_Handler
+                0x0000000000000264                TC3_Handler
+                0x0000000000000264                Dummy_Handler
+                0x0000000000000264                PM_Handler
+                0x0000000000000264                SVC_Handler
+                0x0000000000000264                TCC2_Handler
+                0x0000000000000264                EVSYS_Handler
+                0x0000000000000264                SERCOM3_Handler
+                0x0000000000000264                I2S_Handler
+                0x0000000000000264                NVMCTRL_Handler
+                0x0000000000000264                SERCOM0_Handler
+                0x0000000000000264                DAC_Handler
+                0x0000000000000264                PTC_Handler
+                0x0000000000000264                TC5_Handler
+                0x0000000000000264                SYSCTRL_Handler
+ .text.HardFault_Handler
+                0x0000000000000266        0x2 build/interlock_m0/startup_samd21.o
+                0x0000000000000266                HardFault_Handler
+ .text.Reset_Handler
+                0x0000000000000268       0xb0 build/interlock_m0/startup_samd21.o
+                0x0000000000000268                Reset_Handler
+ .text.add_crc  0x0000000000000318       0x54 build/interlock_m0/usart_sam_ba.o
+                0x0000000000000318                add_crc
+ .text.delay    0x000000000000036c       0x28 build/interlock_m0/utils.o
+                0x000000000000036c                delay
+ .text.writeNum
+                0x0000000000000394       0x38 build/interlock_m0/utils.o
+                0x0000000000000394                writeNum
+ .text.resetIntoApp
+                0x00000000000003cc       0x28 build/interlock_m0/utils.o
+                0x00000000000003cc                resetIntoApp
+ .text.timerTick
+                0x00000000000003f4       0x40 build/interlock_m0/utils.o
+                0x00000000000003f4                timerTick
+ .text.resetIntoBootloader
+                0x0000000000000434       0x28 build/interlock_m0/utils.o
+                0x0000000000000434                resetIntoBootloader
+ .text.led_tick
+                0x000000000000045c       0x88 build/interlock_m0/utils.o
+                0x000000000000045c                led_tick
+ .text.led_signal
+                0x00000000000004e4       0x2c build/interlock_m0/utils.o
+                0x00000000000004e4                led_signal
+ .text.led_init
+                0x0000000000000510       0x10 build/interlock_m0/utils.o
+                0x0000000000000510                led_init
+ .text.RGBLED_set_color
+                0x0000000000000520        0x2 build/interlock_m0/utils.o
+                0x0000000000000520                RGBLED_set_color
+ *fill*         0x0000000000000522        0x2 
+ .text.AT91F_InitUSB
+                0x0000000000000524      0x108 build/interlock_m0/cdc_enumerate.o
+                0x0000000000000524                AT91F_InitUSB
+ .text.USB_ReadCore
+                0x000000000000062c       0xe0 build/interlock_m0/cdc_enumerate.o
+                0x000000000000062c                USB_ReadCore
+ .text.USB_Read
+                0x000000000000070c        0xa build/interlock_m0/cdc_enumerate.o
+                0x000000000000070c                USB_Read
+ .text.USB_ReadBlocking
+                0x0000000000000716       0x22 build/interlock_m0/cdc_enumerate.o
+                0x0000000000000716                USB_ReadBlocking
+ .text.USB_WriteCore
+                0x0000000000000738       0x94 build/interlock_m0/cdc_enumerate.o
+                0x0000000000000738                USB_WriteCore
+ .text.USB_Write
+                0x00000000000007cc        0xa build/interlock_m0/cdc_enumerate.o
+                0x00000000000007cc                USB_Write
+ *fill*         0x00000000000007d6        0x2 
+ .text.sendCtrl
+                0x00000000000007d8       0x1c build/interlock_m0/cdc_enumerate.o
+ .text.AT91F_USB_SendZlp
+                0x00000000000007f4       0x10 build/interlock_m0/cdc_enumerate.o
+                0x00000000000007f4                AT91F_USB_SendZlp
+ .text.USB_Ok   0x0000000000000804      0x4ec build/interlock_m0/cdc_enumerate.o
+                0x0000000000000804                USB_Ok
+ .text.usb_init
+                0x0000000000000cf0       0x20 build/interlock_m0/cdc_enumerate.o
+                0x0000000000000cf0                usb_init
+ .text.cdc_write_buf
+                0x0000000000000d10        0xe build/interlock_m0/cdc_enumerate.o
+                0x0000000000000d10                cdc_write_buf
+ .text.cdc_write_buf_xmd
+                0x0000000000000d1e        0xe build/interlock_m0/cdc_enumerate.o
+                0x0000000000000d1e                cdc_write_buf_xmd
+ .text.cdc_read_buf
+                0x0000000000000d2c       0x1e build/interlock_m0/cdc_enumerate.o
+                0x0000000000000d2c                cdc_read_buf
+ .text.cdc_read_buf_xmd
+                0x0000000000000d4a       0x22 build/interlock_m0/cdc_enumerate.o
+                0x0000000000000d4a                cdc_read_buf_xmd
+ .text.padded_memcpy
+                0x0000000000000d6c       0x20 build/interlock_m0/fat.o
+                0x0000000000000d6c                padded_memcpy
+ .text.read_block
+                0x0000000000000d8c      0x178 build/interlock_m0/fat.o
+                0x0000000000000d8c                read_block
+ .text.write_block
+                0x0000000000000f04       0xe8 build/interlock_m0/fat.o
+                0x0000000000000f04                write_block
+ .text.startup.main
+                0x0000000000000fec      0x1a8 build/interlock_m0/main.o
+                0x0000000000000fec                main
+ .text.udi_msc_clear_sense
+                0x0000000000001194       0x1c build/interlock_m0/msc.o
+ .text.handover_flash
+                0x00000000000011b0       0x34 build/interlock_m0/msc.o
+ .text.try_read_cbw
+                0x00000000000011e4       0x2c build/interlock_m0/msc.o
+                0x00000000000011e4                try_read_cbw
+ .text.udi_msc_csw_send
+                0x0000000000001210       0x14 build/interlock_m0/msc.o
+                0x0000000000001210                udi_msc_csw_send
+ .text.udi_msc_csw_process
+                0x0000000000001224       0x38 build/interlock_m0/msc.o
+ .text.udi_msc_data_send
+                0x000000000000125c       0x6c build/interlock_m0/msc.o
+ .text.udi_msc_spc_mode_sense
+                0x00000000000012c8       0x70 build/interlock_m0/msc.o
+ .text.udi_msc_sbc_trans
+                0x0000000000001338       0xc8 build/interlock_m0/msc.o
+ .text.process_msc
+                0x0000000000001400      0x140 build/interlock_m0/msc.o
+                0x0000000000001400                process_msc
+ .text.handoverPrep
+                0x0000000000001540       0x24 build/interlock_m0/msc.o
+                0x0000000000001540                handoverPrep
+ .text.handover
+                0x0000000000001564       0xe4 build/interlock_m0/msc.o
+ .text.call_applet
+                0x0000000000001648       0x20 build/interlock_m0/sam_ba_monitor.o
+                0x0000000000001648                call_applet
+ .text.put_uint32
+                0x0000000000001668       0x16 build/interlock_m0/sam_ba_monitor.o
+                0x0000000000001668                put_uint32
+ *fill*         0x000000000000167e        0x2 
+ .text.sam_ba_monitor_run
+                0x0000000000001680      0x254 build/interlock_m0/sam_ba_monitor.o
+                0x0000000000001680                sam_ba_monitor_run
+ .text.recv_hf2
+                0x00000000000018d4       0x56 build/interlock_m0/hid.o
+                0x00000000000018d4                recv_hf2
+ .text.send_hf2
+                0x000000000000192a       0x46 build/interlock_m0/hid.o
+                0x000000000000192a                send_hf2
+ .text.send_hf2_response
+                0x0000000000001970       0x14 build/interlock_m0/hid.o
+                0x0000000000001970                send_hf2_response
+ .text.process_core
+                0x0000000000001984       0xf8 build/interlock_m0/hid.o
+                0x0000000000001984                process_core
+ .text.process_hid
+                0x0000000000001a7c       0x28 build/interlock_m0/hid.o
+                0x0000000000001a7c                process_hid
+ .text.hidHandoverLoop
+                0x0000000000001aa4       0x24 build/interlock_m0/hid.o
+                0x0000000000001aa4                hidHandoverLoop
+ .text          0x0000000000001ac8       0x14 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(_thumb1_case_uqi.o)
+                0x0000000000001ac8                __gnu_thumb1_case_uqi
+ .text.memcpy   0x0000000000001adc       0x12 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libg_nano.a(lib_a-memcpy-stub.o)
+                0x0000000000001adc                memcpy
+ .text.memset   0x0000000000001aee       0x10 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libg_nano.a(lib_a-memset.o)
+                0x0000000000001aee                memset
+ .text          0x0000000000001afe        0xe /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libg_nano.a(lib_a-strlen.o)
+                0x0000000000001afe                strlen
+ *(.glue_7t)
+ .glue_7t       0x0000000000001b0c        0x0 linker stubs
+ *(.glue_7)
+ .glue_7        0x0000000000001b0c        0x0 linker stubs
+ *(.rodata .rodata* .gnu.linkonce.r.*)
+ .rodata        0x0000000000001b0c       0x10 build/interlock_m0/cdc_enumerate.o
+ .rodata.devDescriptor
+                0x0000000000001b1c       0x12 build/interlock_m0/cdc_enumerate.o
+                0x0000000000001b1c                devDescriptor
+ *fill*         0x0000000000001b2e        0x2 
+ .rodata.hidDescriptor
+                0x0000000000001b30       0x21 build/interlock_m0/cdc_enumerate.o
+                0x0000000000001b30                hidDescriptor
+ .rodata.str1.1
+                0x0000000000001b51       0x2e build/interlock_m0/cdc_enumerate.o
+ *fill*         0x0000000000001b7f        0x1 
+ .rodata.string_descriptors
+                0x0000000000001b80       0x10 build/interlock_m0/cdc_enumerate.o
+ .rodata.BootBlock
+                0x0000000000001b90       0x3e build/interlock_m0/fat.o
+ .rodata.indexFile
+                0x0000000000001bce       0x99 build/interlock_m0/fat.o
+                0x0000000000001bce                indexFile
+ *fill*         0x0000000000001c67        0x1 
+ .rodata.info   0x0000000000001c68       0x30 build/interlock_m0/fat.o
+ .rodata.infoUf2File
+                0x0000000000001c98       0x70 build/interlock_m0/fat.o
+                0x0000000000001c98                infoUf2File
+ .rodata        0x0000000000001d08        0xc build/interlock_m0/msc.o
+ .rodata.process_msc.str1.1
+                0x0000000000001d14       0x1f build/interlock_m0/msc.o
+ .rodata.fullVersion
+                0x0000000000001d14       0x2a build/interlock_m0/sam_ba_monitor.o
+ .rodata.sam_ba_monitor_run.str1.1
+                0x0000000000001d3e       0x10 build/interlock_m0/sam_ba_monitor.o
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x0000000000001d50                . = ALIGN (0x4)
+ *fill*         0x0000000000001d4e        0x2 
+ *(.init)
+                0x0000000000001d50                . = ALIGN (0x4)
+                0x0000000000001d50                __preinit_array_start = .
+ *(.preinit_array)
+                0x0000000000001d50                __preinit_array_end = .
+                0x0000000000001d50                . = ALIGN (0x4)
+                0x0000000000001d50                __init_array_start = .
+ *(SORT_BY_NAME(.init_array.*))
+ *(.init_array)
+                0x0000000000001d50                __init_array_end = .
+                0x0000000000001d50                . = ALIGN (0x4)
+ *crtbegin.o(.ctors)
+ *(EXCLUDE_FILE(*crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *crtend.o(.ctors)
+                0x0000000000001d50                . = ALIGN (0x4)
+                0x0000000000001d50                _efixed = .
+                [!provide]                        PROVIDE (__exidx_start = .)
+
+.vfp11_veneer   0x0000000000001d50        0x0
+ .vfp11_veneer  0x0000000000001d50        0x0 linker stubs
+
+.v4_bx          0x0000000000001d50        0x0
+ .v4_bx         0x0000000000001d50        0x0 linker stubs
+
+.iplt           0x0000000000001d50        0x0
+ .iplt          0x0000000000001d50        0x0 build/interlock_m0/flash_samd21.o
+
+.igot.plt       0x0000000000001d50        0x0
+ .igot.plt      0x0000000000001d50        0x0 build/interlock_m0/flash_samd21.o
+
+.rel.dyn        0x0000000000001d50        0x0
+ .rel.iplt      0x0000000000001d50        0x0 build/interlock_m0/flash_samd21.o
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                [!provide]                        PROVIDE (__exidx_end = .)
+                0x0000000000001d50                . = ALIGN (0x4)
+                0x0000000000001d50                _etext = .
+
+.relocate       0x0000000020000000      0x1d0 load address 0x0000000000001d50
+                0x0000000020000000                . = ALIGN (0x4)
+                0x0000000020000000                _srelocate = .
+ *(.ramfunc .ramfunc.*)
+ *(.data .data.*)
+ .data.current_cpu_frequency_MHz
+                0x0000000020000000        0x4 build/interlock_m0/init_samd21.o
+                0x0000000020000000                current_cpu_frequency_MHz
+ .data.led_tick_step
+                0x0000000020000004        0x1 build/interlock_m0/utils.o
+                0x0000000020000004                led_tick_step
+ .data.limit    0x0000000020000005        0x1 build/interlock_m0/utils.o
+ *fill*         0x0000000020000006        0x2 
+ .data.bosDescriptor
+                0x0000000020000008       0x39 build/interlock_m0/cdc_enumerate.o
+ *fill*         0x0000000020000041        0x3 
+ .data.cfgDescriptor
+                0x0000000020000044       0x99 build/interlock_m0/cdc_enumerate.o
+                0x0000000020000044                cfgDescriptor
+ *fill*         0x00000000200000dd        0x3 
+ .data.hidCfgDescriptor
+                0x00000000200000e0        0x9 build/interlock_m0/cdc_enumerate.o
+                0x00000000200000e0                hidCfgDescriptor
+ *fill*         0x00000000200000e9        0x3 
+ .data.line_coding
+                0x00000000200000ec        0x8 build/interlock_m0/cdc_enumerate.o
+ .data.msOS20Descriptor
+                0x00000000200000f4       0xaa build/interlock_m0/cdc_enumerate.o
+ .data.udi_msc_csw
+                0x000000002000019e        0xd build/interlock_m0/msc.o
+ *fill*         0x00000000200001ab        0x1 
+ .data.udi_msc_inquiry_data.12053
+                0x00000000200001ac       0x24 build/interlock_m0/msc.o
+                0x00000000200001d0                . = ALIGN (0x4)
+                0x00000000200001d0                _erelocate = .
+
+.bss            0x00000000200001d0      0xc0c load address 0x0000000000001f20
+                0x00000000200001d0                . = ALIGN (0x4)
+                0x00000000200001d0                _sbss = .
+                0x00000000200001d0                _szero = .
+ *(.bss .bss.*)
+ .bss.crcCache  0x00000000200001d0      0x200 build/interlock_m0/usart_sam_ba.o
+ .bss.led_tick_on
+                0x00000000200003d0        0x1 build/interlock_m0/utils.o
+                0x00000000200003d0                led_tick_on
+ *fill*         0x00000000200003d1        0x3 
+ .bss.now       0x00000000200003d4        0x4 build/interlock_m0/utils.o
+ .bss.signal_end
+                0x00000000200003d8        0x4 build/interlock_m0/utils.o
+ .bss.timerLow  0x00000000200003dc        0x4 build/interlock_m0/utils.o
+ .bss.currentConfiguration
+                0x00000000200003e0        0x1 build/interlock_m0/cdc_enumerate.o
+ .bss.serial_number
+                0x00000000200003e1       0x21 build/interlock_m0/cdc_enumerate.o
+ .bss.wLength   0x0000000020000402        0x2 build/interlock_m0/cdc_enumerate.o
+ .bss.main_b_cdc_enable
+                0x0000000020000404        0x1 build/interlock_m0/main.o
+ *fill*         0x0000000020000405        0x3 
+ .bss.block_buffer
+                0x0000000020000408      0x200 build/interlock_m0/msc.o
+ .bss.sense.12076
+                0x0000000020000608       0x14 build/interlock_m0/msc.o
+ .bss.udi_msc_capacity.12086
+                0x000000002000061c        0x8 build/interlock_m0/msc.o
+ .bss.udi_msc_cbw
+                0x0000000020000624       0x1f build/interlock_m0/msc.o
+ .bss.udi_msc_sense
+                0x0000000020000643       0x12 build/interlock_m0/msc.o
+ *fill*         0x0000000020000655        0x3 
+ .bss.usbWriteState
+                0x0000000020000658       0x98 build/interlock_m0/msc.o
+ .bss.b_sam_ba_interface_usart
+                0x00000000200006f0        0x1 build/interlock_m0/sam_ba_monitor.o
+                0x00000000200006f0                b_sam_ba_interface_usart
+ *fill*         0x00000000200006f1        0x3 
+ .bss.src_buff_addr.11498
+                0x00000000200006f4        0x4 build/interlock_m0/sam_ba_monitor.o
+ .bss.hidbufData
+                0x00000000200006f8      0x188 build/interlock_m0/hid.o
+ .bss.webbufData
+                0x0000000020000880      0x188 build/interlock_m0/hid.o
+ *(COMMON)
+ COMMON         0x0000000020000a08        0x8 build/interlock_m0/utils.o
+                0x0000000020000a08                timerHigh
+                0x0000000020000a0c                resetHorizon
+ COMMON         0x0000000020000a10      0x364 build/interlock_m0/cdc_enumerate.o
+                0x0000000020000a10                ctrlOutCache
+                0x0000000020000a54                usb_endpoint_table
+                0x0000000020000b54                endpointCache
+ COMMON         0x0000000020000d74       0x68 build/interlock_m0/sam_ba_monitor.o
+                0x0000000020000d74                j
+                0x0000000020000d78                length
+                0x0000000020000d7c                ptr
+                0x0000000020000d80                command
+                0x0000000020000d84                i
+                0x0000000020000d88                data
+                0x0000000020000dcc                ptr_data
+                0x0000000020000dd0                sp
+                0x0000000020000dd4                current_number
+                0x0000000020000dd8                u32tmp
+                0x0000000020000ddc                . = ALIGN (0x4)
+                0x0000000020000ddc                _ebss = .
+                0x0000000020000ddc                _ezero = .
+
+.stack          0x0000000020000ddc     0x2004 load address 0x0000000000002b2c
+                0x0000000020000de0                . = ALIGN (0x8)
+ *fill*         0x0000000020000ddc        0x4 
+                0x0000000020000de0                _sstack = .
+                0x0000000020002de0                . = (. + STACK_SIZE)
+ *fill*         0x0000000020000de0     0x2000 
+                0x0000000020002de0                . = ALIGN (0x8)
+                0x0000000020002de0                _estack = .
+                0x0000000020002de0                . = ALIGN (0x4)
+                0x0000000020002de0                _end = .
+                0x0000000000001ff0                _binfo_start = 0x1ff0
+
+.binfo          0x0000000000001ff0       0x10
+ *(.binfo)
+ .binfo         0x0000000000001ff0       0x10 build/interlock_m0/msc.o
+                0x0000000000001ff0                binfo
+OUTPUT(build/interlock_m0/bootloader-interlock_m0-v3.14.0-10-gb17ca18.elf elf32-littlearm)
+
+.debug_info     0x0000000000000000    0x18727
+ .debug_info    0x0000000000000000      0xfbe build/interlock_m0/flash_samd21.o
+ .debug_info    0x0000000000000fbe     0x2325 build/interlock_m0/init_samd21.o
+ .debug_info    0x00000000000032e3     0x35c5 build/interlock_m0/startup_samd21.o
+ .debug_info    0x00000000000068a8     0x3d4b build/interlock_m0/usart_sam_ba.o
+ .debug_info    0x000000000000a5f3     0x125c build/interlock_m0/utils.o
+ .debug_info    0x000000000000b84f     0x444d build/interlock_m0/cdc_enumerate.o
+ .debug_info    0x000000000000fc9c      0xff8 build/interlock_m0/fat.o
+ .debug_info    0x0000000000010c94     0x2127 build/interlock_m0/main.o
+ .debug_info    0x0000000000012dbb     0x38d3 build/interlock_m0/msc.o
+ .debug_info    0x000000000001668e      0xe19 build/interlock_m0/sam_ba_monitor.o
+ .debug_info    0x00000000000174a7     0x1280 build/interlock_m0/hid.o
+
+.debug_abbrev   0x0000000000000000     0x280b
+ .debug_abbrev  0x0000000000000000      0x2c1 build/interlock_m0/flash_samd21.o
+ .debug_abbrev  0x00000000000002c1      0x34a build/interlock_m0/init_samd21.o
+ .debug_abbrev  0x000000000000060b      0x25b build/interlock_m0/startup_samd21.o
+ .debug_abbrev  0x0000000000000866      0x494 build/interlock_m0/usart_sam_ba.o
+ .debug_abbrev  0x0000000000000cfa      0x366 build/interlock_m0/utils.o
+ .debug_abbrev  0x0000000000001060      0x4da build/interlock_m0/cdc_enumerate.o
+ .debug_abbrev  0x000000000000153a      0x319 build/interlock_m0/fat.o
+ .debug_abbrev  0x0000000000001853      0x35d build/interlock_m0/main.o
+ .debug_abbrev  0x0000000000001bb0      0x4fd build/interlock_m0/msc.o
+ .debug_abbrev  0x00000000000020ad      0x386 build/interlock_m0/sam_ba_monitor.o
+ .debug_abbrev  0x0000000000002433      0x3d8 build/interlock_m0/hid.o
+
+.debug_loc      0x0000000000000000     0x28ee
+ .debug_loc     0x0000000000000000      0x3a6 build/interlock_m0/flash_samd21.o
+ .debug_loc     0x00000000000003a6       0x65 build/interlock_m0/init_samd21.o
+ .debug_loc     0x000000000000040b       0x2b build/interlock_m0/startup_samd21.o
+ .debug_loc     0x0000000000000436      0x81f build/interlock_m0/usart_sam_ba.o
+ .debug_loc     0x0000000000000c55      0x146 build/interlock_m0/utils.o
+ .debug_loc     0x0000000000000d9b      0xb1e build/interlock_m0/cdc_enumerate.o
+ .debug_loc     0x00000000000018b9      0x4c5 build/interlock_m0/fat.o
+ .debug_loc     0x0000000000001d7e       0x6e build/interlock_m0/main.o
+ .debug_loc     0x0000000000001dec      0x495 build/interlock_m0/msc.o
+ .debug_loc     0x0000000000002281      0x1d5 build/interlock_m0/sam_ba_monitor.o
+ .debug_loc     0x0000000000002456      0x498 build/interlock_m0/hid.o
+
+.debug_aranges  0x0000000000000000      0x388
+ .debug_aranges
+                0x0000000000000000       0x48 build/interlock_m0/flash_samd21.o
+ .debug_aranges
+                0x0000000000000048       0x30 build/interlock_m0/init_samd21.o
+ .debug_aranges
+                0x0000000000000078       0x30 build/interlock_m0/startup_samd21.o
+ .debug_aranges
+                0x00000000000000a8       0x88 build/interlock_m0/usart_sam_ba.o
+ .debug_aranges
+                0x0000000000000130       0x68 build/interlock_m0/utils.o
+ .debug_aranges
+                0x0000000000000198       0x98 build/interlock_m0/cdc_enumerate.o
+ .debug_aranges
+                0x0000000000000230       0x30 build/interlock_m0/fat.o
+ .debug_aranges
+                0x0000000000000260       0x20 build/interlock_m0/main.o
+ .debug_aranges
+                0x0000000000000280       0x80 build/interlock_m0/msc.o
+ .debug_aranges
+                0x0000000000000300       0x40 build/interlock_m0/sam_ba_monitor.o
+ .debug_aranges
+                0x0000000000000340       0x48 build/interlock_m0/hid.o
+
+.debug_ranges   0x0000000000000000      0x590
+ .debug_ranges  0x0000000000000000       0x70 build/interlock_m0/flash_samd21.o
+ .debug_ranges  0x0000000000000070       0x40 build/interlock_m0/init_samd21.o
+ .debug_ranges  0x00000000000000b0       0x20 build/interlock_m0/startup_samd21.o
+ .debug_ranges  0x00000000000000d0       0x90 build/interlock_m0/usart_sam_ba.o
+ .debug_ranges  0x0000000000000160       0x90 build/interlock_m0/utils.o
+ .debug_ranges  0x00000000000001f0       0xf0 build/interlock_m0/cdc_enumerate.o
+ .debug_ranges  0x00000000000002e0       0xc8 build/interlock_m0/fat.o
+ .debug_ranges  0x00000000000003a8       0x28 build/interlock_m0/main.o
+ .debug_ranges  0x00000000000003d0       0xd8 build/interlock_m0/msc.o
+ .debug_ranges  0x00000000000004a8       0x60 build/interlock_m0/sam_ba_monitor.o
+ .debug_ranges  0x0000000000000508       0x88 build/interlock_m0/hid.o
+
+.debug_line     0x0000000000000000     0x209a
+ .debug_line    0x0000000000000000      0x24a build/interlock_m0/flash_samd21.o
+ .debug_line    0x000000000000024a      0x22e build/interlock_m0/init_samd21.o
+ .debug_line    0x0000000000000478      0x1aa build/interlock_m0/startup_samd21.o
+ .debug_line    0x0000000000000622      0x3f1 build/interlock_m0/usart_sam_ba.o
+ .debug_line    0x0000000000000a13      0x2df build/interlock_m0/utils.o
+ .debug_line    0x0000000000000cf2      0x4c4 build/interlock_m0/cdc_enumerate.o
+ .debug_line    0x00000000000011b6      0x2b4 build/interlock_m0/fat.o
+ .debug_line    0x000000000000146a      0x295 build/interlock_m0/main.o
+ .debug_line    0x00000000000016ff      0x483 build/interlock_m0/msc.o
+ .debug_line    0x0000000000001b82      0x2b3 build/interlock_m0/sam_ba_monitor.o
+ .debug_line    0x0000000000001e35      0x265 build/interlock_m0/hid.o
+
+.debug_str      0x0000000000000000     0x3e84
+ .debug_str     0x0000000000000000      0x73f build/interlock_m0/flash_samd21.o
+                                        0x822 (size before relaxing)
+ .debug_str     0x000000000000073f      0x6cd build/interlock_m0/init_samd21.o
+                                        0xe8b (size before relaxing)
+ .debug_str     0x0000000000000e0c      0xed1 build/interlock_m0/startup_samd21.o
+                                       0x1343 (size before relaxing)
+ .debug_str     0x0000000000001cdd      0xc55 build/interlock_m0/usart_sam_ba.o
+                                       0x13ed (size before relaxing)
+ .debug_str     0x0000000000002932       0xc3 build/interlock_m0/utils.o
+                                        0x893 (size before relaxing)
+ .debug_str     0x00000000000029f5      0x43e build/interlock_m0/cdc_enumerate.o
+                                       0x165a (size before relaxing)
+ .debug_str     0x0000000000002e33      0x29f build/interlock_m0/fat.o
+                                        0x91d (size before relaxing)
+ .debug_str     0x00000000000030d2      0x12e build/interlock_m0/main.o
+                                        0xd37 (size before relaxing)
+ .debug_str     0x0000000000003200      0x9dc build/interlock_m0/msc.o
+                                       0x18e1 (size before relaxing)
+ .debug_str     0x0000000000003bdc       0xa9 build/interlock_m0/sam_ba_monitor.o
+                                        0x7c6 (size before relaxing)
+ .debug_str     0x0000000000003c85      0x1ff build/interlock_m0/hid.o
+                                        0x908 (size before relaxing)
+
+.comment        0x0000000000000000       0x7f
+ .comment       0x0000000000000000       0x7f build/interlock_m0/flash_samd21.o
+                                         0x80 (size before relaxing)
+ .comment       0x000000000000007f       0x80 build/interlock_m0/init_samd21.o
+ .comment       0x000000000000007f       0x80 build/interlock_m0/startup_samd21.o
+ .comment       0x000000000000007f       0x80 build/interlock_m0/usart_sam_ba.o
+ .comment       0x000000000000007f       0x80 build/interlock_m0/utils.o
+ .comment       0x000000000000007f       0x80 build/interlock_m0/cdc_enumerate.o
+ .comment       0x000000000000007f       0x80 build/interlock_m0/fat.o
+ .comment       0x000000000000007f       0x80 build/interlock_m0/main.o
+ .comment       0x000000000000007f       0x80 build/interlock_m0/msc.o
+ .comment       0x000000000000007f       0x80 build/interlock_m0/sam_ba_monitor.o
+ .comment       0x000000000000007f       0x80 build/interlock_m0/hid.o
+
+.ARM.attributes
+                0x0000000000000000       0x30
+ .ARM.attributes
+                0x0000000000000000       0x32 build/interlock_m0/flash_samd21.o
+ .ARM.attributes
+                0x0000000000000032       0x32 build/interlock_m0/init_samd21.o
+ .ARM.attributes
+                0x0000000000000064       0x32 build/interlock_m0/startup_samd21.o
+ .ARM.attributes
+                0x0000000000000096       0x32 build/interlock_m0/usart_sam_ba.o
+ .ARM.attributes
+                0x00000000000000c8       0x32 build/interlock_m0/utils.o
+ .ARM.attributes
+                0x00000000000000fa       0x32 build/interlock_m0/cdc_enumerate.o
+ .ARM.attributes
+                0x000000000000012c       0x32 build/interlock_m0/fat.o
+ .ARM.attributes
+                0x000000000000015e       0x32 build/interlock_m0/main.o
+ .ARM.attributes
+                0x0000000000000190       0x32 build/interlock_m0/msc.o
+ .ARM.attributes
+                0x00000000000001c2       0x32 build/interlock_m0/sam_ba_monitor.o
+ .ARM.attributes
+                0x00000000000001f4       0x32 build/interlock_m0/hid.o
+ .ARM.attributes
+                0x0000000000000226       0x1e /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(_thumb1_case_uqi.o)
+ .ARM.attributes
+                0x0000000000000244       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libg_nano.a(lib_a-memcpy-stub.o)
+ .ARM.attributes
+                0x0000000000000270       0x2c /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libg_nano.a(lib_a-memset.o)
+ .ARM.attributes
+                0x000000000000029c       0x1c /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libg_nano.a(lib_a-strlen.o)
+
+.debug_frame    0x0000000000000000      0x918
+ .debug_frame   0x0000000000000000       0xb4 build/interlock_m0/flash_samd21.o
+ .debug_frame   0x00000000000000b4       0x54 build/interlock_m0/init_samd21.o
+ .debug_frame   0x0000000000000108       0x4c build/interlock_m0/startup_samd21.o
+ .debug_frame   0x0000000000000154      0x184 build/interlock_m0/usart_sam_ba.o
+ .debug_frame   0x00000000000002d8       0xcc build/interlock_m0/utils.o
+ .debug_frame   0x00000000000003a4      0x1d0 build/interlock_m0/cdc_enumerate.o
+ .debug_frame   0x0000000000000574       0x68 build/interlock_m0/fat.o
+ .debug_frame   0x00000000000005dc       0x30 build/interlock_m0/main.o
+ .debug_frame   0x000000000000060c      0x170 build/interlock_m0/msc.o
+ .debug_frame   0x000000000000077c       0x94 build/interlock_m0/sam_ba_monitor.o
+ .debug_frame   0x0000000000000810       0xc0 build/interlock_m0/hid.o
+ .debug_frame   0x00000000000008d0       0x28 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libg_nano.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x00000000000008f8       0x20 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libg_nano.a(lib_a-memset.o)
+
+Cross Reference Table
+
+Symbol                                            File
+AC_Handler                                        build/interlock_m0/startup_samd21.o
+ADC_Handler                                       build/interlock_m0/startup_samd21.o
+AT91F_InitUSB                                     build/interlock_m0/cdc_enumerate.o
+AT91F_USB_SendZlp                                 build/interlock_m0/cdc_enumerate.o
+DAC_Handler                                       build/interlock_m0/startup_samd21.o
+DMAC_Handler                                      build/interlock_m0/startup_samd21.o
+Dummy_Handler                                     build/interlock_m0/startup_samd21.o
+EIC_Handler                                       build/interlock_m0/startup_samd21.o
+EVSYS_Handler                                     build/interlock_m0/startup_samd21.o
+HardFault_Handler                                 build/interlock_m0/startup_samd21.o
+I2S_Handler                                       build/interlock_m0/startup_samd21.o
+NMI_Handler                                       build/interlock_m0/startup_samd21.o
+NVMCTRL_Handler                                   build/interlock_m0/startup_samd21.o
+PM_Handler                                        build/interlock_m0/startup_samd21.o
+PTC_Handler                                       build/interlock_m0/startup_samd21.o
+PendSV_Handler                                    build/interlock_m0/startup_samd21.o
+RGBLED_set_color                                  build/interlock_m0/utils.o
+                                                  build/interlock_m0/sam_ba_monitor.o
+                                                  build/interlock_m0/main.o
+RTC_Handler                                       build/interlock_m0/startup_samd21.o
+Reset_Handler                                     build/interlock_m0/startup_samd21.o
+SERCOM0_Handler                                   build/interlock_m0/startup_samd21.o
+SERCOM1_Handler                                   build/interlock_m0/startup_samd21.o
+SERCOM2_Handler                                   build/interlock_m0/startup_samd21.o
+SERCOM3_Handler                                   build/interlock_m0/startup_samd21.o
+SVC_Handler                                       build/interlock_m0/startup_samd21.o
+SYSCTRL_Handler                                   build/interlock_m0/startup_samd21.o
+SysTick_Handler                                   build/interlock_m0/init_samd21.o
+TC3_Handler                                       build/interlock_m0/startup_samd21.o
+TC4_Handler                                       build/interlock_m0/startup_samd21.o
+TC5_Handler                                       build/interlock_m0/startup_samd21.o
+TCC0_Handler                                      build/interlock_m0/startup_samd21.o
+TCC1_Handler                                      build/interlock_m0/startup_samd21.o
+TCC2_Handler                                      build/interlock_m0/startup_samd21.o
+USB_Handler                                       build/interlock_m0/startup_samd21.o
+USB_Ok                                            build/interlock_m0/cdc_enumerate.o
+                                                  build/interlock_m0/msc.o
+                                                  build/interlock_m0/main.o
+USB_Read                                          build/interlock_m0/cdc_enumerate.o
+USB_ReadBlocking                                  build/interlock_m0/cdc_enumerate.o
+                                                  build/interlock_m0/msc.o
+USB_ReadCore                                      build/interlock_m0/cdc_enumerate.o
+                                                  build/interlock_m0/hid.o
+                                                  build/interlock_m0/msc.o
+USB_Write                                         build/interlock_m0/cdc_enumerate.o
+                                                  build/interlock_m0/msc.o
+USB_WriteCore                                     build/interlock_m0/cdc_enumerate.o
+                                                  build/interlock_m0/hid.o
+                                                  build/interlock_m0/msc.o
+WDT_Handler                                       build/interlock_m0/startup_samd21.o
+__gnu_thumb1_case_uqi                             /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v6-m/libgcc.a(_thumb1_case_uqi.o)
+                                                  build/interlock_m0/hid.o
+_erelocate                                        build/interlock_m0/startup_samd21.o
+_estack                                           build/interlock_m0/startup_samd21.o
+_etext                                            build/interlock_m0/startup_samd21.o
+_ezero                                            build/interlock_m0/startup_samd21.o
+_sfixed                                           build/interlock_m0/startup_samd21.o
+_srelocate                                        build/interlock_m0/startup_samd21.o
+_szero                                            build/interlock_m0/startup_samd21.o
+add_crc                                           build/interlock_m0/usart_sam_ba.o
+                                                  build/interlock_m0/hid.o
+                                                  build/interlock_m0/sam_ba_monitor.o
+arrowLogo                                         build/interlock_m0/images.o
+b_sam_ba_interface_usart                          build/interlock_m0/sam_ba_monitor.o
+b_sharp_received                                  build/interlock_m0/usart_sam_ba.o
+binfo                                             build/interlock_m0/msc.o
+buffer_rx_usart                                   build/interlock_m0/usart_sam_ba.o
+buffer_tx_usart                                   build/interlock_m0/usart_sam_ba.o
+call_applet                                       build/interlock_m0/sam_ba_monitor.o
+cdc_is_rx_ready                                   build/interlock_m0/cdc_enumerate.o
+cdc_read_buf                                      build/interlock_m0/cdc_enumerate.o
+                                                  build/interlock_m0/sam_ba_monitor.o
+cdc_read_buf_xmd                                  build/interlock_m0/cdc_enumerate.o
+                                                  build/interlock_m0/sam_ba_monitor.o
+cdc_write_buf                                     build/interlock_m0/cdc_enumerate.o
+                                                  build/interlock_m0/sam_ba_monitor.o
+cdc_write_buf_xmd                                 build/interlock_m0/cdc_enumerate.o
+                                                  build/interlock_m0/sam_ba_monitor.o
+cfgDescriptor                                     build/interlock_m0/cdc_enumerate.o
+command                                           build/interlock_m0/sam_ba_monitor.o
+copy_words                                        build/interlock_m0/flash_samd21.o
+                                                  build/interlock_m0/hid.o
+ctrlOutCache                                      build/interlock_m0/cdc_enumerate.o
+current_cpu_frequency_MHz                         build/interlock_m0/init_samd21.o
+                                                  build/interlock_m0/utils.o
+current_number                                    build/interlock_m0/sam_ba_monitor.o
+data                                              build/interlock_m0/sam_ba_monitor.o
+delay                                             build/interlock_m0/utils.o
+                                                  build/interlock_m0/main.o
+devDescriptor                                     build/interlock_m0/cdc_enumerate.o
+endpointCache                                     build/interlock_m0/cdc_enumerate.o
+error_timeout                                     build/interlock_m0/usart_sam_ba.o
+exception_table                                   build/interlock_m0/startup_samd21.o
+fileLogo                                          build/interlock_m0/images.o
+flash_erase_row                                   build/interlock_m0/flash_samd21.o
+flash_erase_to_end                                build/interlock_m0/flash_samd21.o
+                                                  build/interlock_m0/sam_ba_monitor.o
+flash_write                                       build/interlock_m0/flash_samd21.o
+flash_write_row                                   build/interlock_m0/flash_samd21.o
+                                                  build/interlock_m0/hid.o
+                                                  build/interlock_m0/fat.o
+flash_write_words                                 build/interlock_m0/flash_samd21.o
+                                                  build/interlock_m0/sam_ba_monitor.o
+font8                                             build/interlock_m0/images.o
+g_interrupt_enabled                               build/interlock_m0/init_samd21.o
+getPacket                                         build/interlock_m0/usart_sam_ba.o
+handoverPrep                                      build/interlock_m0/msc.o
+                                                  build/interlock_m0/hid.o
+hidCfgDescriptor                                  build/interlock_m0/cdc_enumerate.o
+hidDescriptor                                     build/interlock_m0/cdc_enumerate.o
+hidHandoverLoop                                   build/interlock_m0/hid.o
+                                                  build/interlock_m0/msc.o
+i                                                 build/interlock_m0/sam_ba_monitor.o
+idx_rx_read                                       build/interlock_m0/usart_sam_ba.o
+idx_rx_write                                      build/interlock_m0/usart_sam_ba.o
+idx_tx_read                                       build/interlock_m0/usart_sam_ba.o
+idx_tx_write                                      build/interlock_m0/usart_sam_ba.o
+indexFile                                         build/interlock_m0/fat.o
+infoUf2File                                       build/interlock_m0/fat.o
+                                                  build/interlock_m0/hid.o
+                                                  build/interlock_m0/msc.o
+j                                                 build/interlock_m0/sam_ba_monitor.o
+led_init                                          build/interlock_m0/utils.o
+                                                  build/interlock_m0/main.o
+led_signal                                        build/interlock_m0/utils.o
+                                                  build/interlock_m0/sam_ba_monitor.o
+                                                  build/interlock_m0/msc.o
+led_tick                                          build/interlock_m0/utils.o
+                                                  build/interlock_m0/init_samd21.o
+led_tick_on                                       build/interlock_m0/utils.o
+led_tick_step                                     build/interlock_m0/utils.o
+                                                  build/interlock_m0/main.o
+length                                            build/interlock_m0/sam_ba_monitor.o
+main                                              build/interlock_m0/main.o
+                                                  build/interlock_m0/startup_samd21.o
+memcpy                                            /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libg_nano.a(lib_a-memcpy-stub.o)
+                                                  build/interlock_m0/hid.o
+                                                  build/interlock_m0/sam_ba_monitor.o
+                                                  build/interlock_m0/msc.o
+                                                  build/interlock_m0/fat.o
+                                                  build/interlock_m0/cdc_enumerate.o
+memset                                            /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libg_nano.a(lib_a-memset.o)
+                                                  build/interlock_m0/hid.o
+                                                  build/interlock_m0/msc.o
+                                                  build/interlock_m0/fat.o
+                                                  build/interlock_m0/cdc_enumerate.o
+mode_of_transfer                                  build/interlock_m0/usart_sam_ba.o
+mscReset                                          build/interlock_m0/msc.o
+msc_reset                                         build/interlock_m0/msc.o
+padded_memcpy                                     build/interlock_m0/fat.o
+                                                  build/interlock_m0/msc.o
+panic                                             build/interlock_m0/utils.o
+pendriveLogo                                      build/interlock_m0/images.o
+process_core                                      build/interlock_m0/hid.o
+process_hid                                       build/interlock_m0/hid.o
+                                                  build/interlock_m0/msc.o
+process_msc                                       build/interlock_m0/msc.o
+                                                  build/interlock_m0/sam_ba_monitor.o
+ptr                                               build/interlock_m0/sam_ba_monitor.o
+ptr_data                                          build/interlock_m0/sam_ba_monitor.o
+put_uint32                                        build/interlock_m0/sam_ba_monitor.o
+read_block                                        build/interlock_m0/fat.o
+                                                  build/interlock_m0/msc.o
+recv_hf2                                          build/interlock_m0/hid.o
+resetHorizon                                      build/interlock_m0/utils.o
+                                                  build/interlock_m0/main.o
+                                                  build/interlock_m0/fat.o
+resetIntoApp                                      build/interlock_m0/utils.o
+                                                  build/interlock_m0/hid.o
+                                                  build/interlock_m0/msc.o
+resetIntoBootloader                               build/interlock_m0/utils.o
+                                                  build/interlock_m0/hid.o
+                                                  build/interlock_m0/msc.o
+                                                  build/interlock_m0/main.o
+reset_ep                                          build/interlock_m0/cdc_enumerate.o
+                                                  build/interlock_m0/msc.o
+sam_ba_monitor_init                               build/interlock_m0/sam_ba_monitor.o
+sam_ba_monitor_run                                build/interlock_m0/sam_ba_monitor.o
+                                                  build/interlock_m0/main.o
+sam_ba_putdata_term                               build/interlock_m0/sam_ba_monitor.o
+send_hf2                                          build/interlock_m0/hid.o
+send_hf2_response                                 build/interlock_m0/hid.o
+size_of_data                                      build/interlock_m0/usart_sam_ba.o
+sp                                                build/interlock_m0/sam_ba_monitor.o
+stall_ep                                          build/interlock_m0/cdc_enumerate.o
+                                                  build/interlock_m0/msc.o
+strlen                                            /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/libg_nano.a(lib_a-strlen.o)
+                                                  build/interlock_m0/hid.o
+                                                  build/interlock_m0/fat.o
+                                                  build/interlock_m0/cdc_enumerate.o
+system_init                                       build/interlock_m0/init_samd21.o
+                                                  build/interlock_m0/main.o
+timerHigh                                         build/interlock_m0/utils.o
+                                                  build/interlock_m0/main.o
+                                                  build/interlock_m0/fat.o
+timerTick                                         build/interlock_m0/utils.o
+                                                  build/interlock_m0/cdc_enumerate.o
+try_read_cbw                                      build/interlock_m0/msc.o
+u32tmp                                            build/interlock_m0/sam_ba_monitor.o
+uart_basic_init                                   build/interlock_m0/uart_driver.o
+                                                  build/interlock_m0/usart_sam_ba.o
+uart_disable                                      build/interlock_m0/uart_driver.o
+                                                  build/interlock_m0/usart_sam_ba.o
+uart_drv_error_flag                               build/interlock_m0/uart_driver.o
+uart_get_sercom_index                             build/interlock_m0/uart_driver.o
+                                                  build/interlock_m0/usart_sam_ba.o
+uart_read_buffer_polled                           build/interlock_m0/uart_driver.o
+uart_read_byte                                    build/interlock_m0/uart_driver.o
+                                                  build/interlock_m0/usart_sam_ba.o
+uart_write_buffer_polled                          build/interlock_m0/uart_driver.o
+uart_write_byte                                   build/interlock_m0/uart_driver.o
+                                                  build/interlock_m0/usart_sam_ba.o
+udd_ep_set_halt                                   build/interlock_m0/msc.o
+udi_msc_csw_send                                  build/interlock_m0/msc.o
+usart_close                                       build/interlock_m0/usart_sam_ba.o
+usart_getc                                        build/interlock_m0/usart_sam_ba.o
+usart_getdata                                     build/interlock_m0/usart_sam_ba.o
+usart_getdata_xmd                                 build/interlock_m0/usart_sam_ba.o
+usart_is_rx_ready                                 build/interlock_m0/usart_sam_ba.o
+usart_open                                        build/interlock_m0/usart_sam_ba.o
+usart_putc                                        build/interlock_m0/usart_sam_ba.o
+usart_putdata                                     build/interlock_m0/usart_sam_ba.o
+usart_putdata_xmd                                 build/interlock_m0/usart_sam_ba.o
+usart_readc                                       build/interlock_m0/usart_sam_ba.o
+usart_sharp_received                              build/interlock_m0/usart_sam_ba.o
+usb_endpoint_table                                build/interlock_m0/cdc_enumerate.o
+usb_init                                          build/interlock_m0/cdc_enumerate.o
+                                                  build/interlock_m0/main.o
+writeNum                                          build/interlock_m0/utils.o
+                                                  build/interlock_m0/sam_ba_monitor.o
+                                                  build/interlock_m0/cdc_enumerate.o
+write_block                                       build/interlock_m0/fat.o
+                                                  build/interlock_m0/msc.o
